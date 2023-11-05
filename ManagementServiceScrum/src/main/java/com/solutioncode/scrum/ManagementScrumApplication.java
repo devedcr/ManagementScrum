@@ -14,12 +14,3 @@ public class ManagementScrumApplication {
     }
 
 }
-
-@RestController
-@RequestMapping(value = "/")
-class Prueba {
-    @GetMapping
-    public String saludo() {
-        return "prueba";
-    }
-}
