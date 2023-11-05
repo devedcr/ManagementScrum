@@ -1,10 +1,11 @@
 package com.solutioncode.scrum.service.auth;
 
-import com.solutioncode.scrum.component.security.CustomUser;
+import com.solutioncode.scrum.configuration.security.CustomUser;
 import com.solutioncode.scrum.repository.user.IUserRepository;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
