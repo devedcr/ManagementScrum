@@ -1,4 +1,4 @@
-package com.solutioncode.scrum.component.security;
+package com.solutioncode.scrum.configuration.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.solutioncode.scrum.component.response.ApiResponse;
@@ -12,7 +12,6 @@ import java.io.IOException;
 
 public class AuthorizationHandler implements AccessDeniedHandler {
     private ObjectMapper objectMapper = new ObjectMapper();
-
     @Override
     public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException accessDeniedException) throws IOException, ServletException {
         var authorizationFailed = ApiResponse.createErrorResponse("Authorization Failed");
